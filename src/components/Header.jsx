@@ -2,9 +2,10 @@ import React from 'react'
 import { NavLink } from 'react-router'
 import './Header.css'
 
-function Header({cart}) {
+function Header({ cart }) {
   let totalQuantity = 0;
-  cart.forEach(cartItem => {
+
+  cart.forEach((cartItem) => {
     totalQuantity+=cartItem.quantity;
   });
 
